@@ -2,10 +2,14 @@
 
 .nav_container {
     width: 100vw;
-    height: 100px;
+    height: 10vh;
+    max-height: 100px;
+    min-height: 90px;
     display: flex;
     align-items: center;
     box-shadow: -10px -20px 50px;
+    position: fixed;
+    background: #fff;
 }
 
 .nav_logo {
@@ -24,6 +28,7 @@
 
 .nav_links a {
     margin: 0 5px 0 0;
+    font-size: 20px;
 }
 
 .nav_links a:not(:last-child)::after {
@@ -34,6 +39,11 @@
 .nav_links a:hover {
     color: #2E3192;
 }
+
+.nav_links a::after:hover {
+    color: #000;
+}
+
 .nav_links a:active {
     color: #C9D4E3;
 }

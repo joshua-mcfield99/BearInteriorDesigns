@@ -15,7 +15,18 @@
 body {
     box-sizing: border-box;
     font-family: montserrat, sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal; 
     background: #FFF;
+}
+
+h1, h2, h3 {
+    font-family: chapman, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.main {
+    width: 100vw;
+    max-width: 1990px;
 }
