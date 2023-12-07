@@ -16,6 +16,11 @@
     margin: 0 auto 0 25px;
 }
 
+.nav_logo img {
+    height: 80px;
+    width: auto;
+}
+
 .nav_whatsapp {
     margin: 0 25px 0 auto;
 }
@@ -28,7 +33,7 @@
 
 .nav_links a {
     margin: 0 5px 0 0;
-    font-size: 20px;
+    font-size: 1.13rem;
 }
 
 .nav_links a:not(:last-child)::after {
@@ -46,4 +51,31 @@
 
 .nav_links a:active {
     color: #C9D4E3;
+}
+
+.nav_whatsapp {
+    width: fit-content;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp_link {
+    width: 200px;
+    height: 50px;
+    background: #2E3192;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.whatsapp_link:hover {
+    background-color: #393d9b;
+}
+
+@media only screen and (max-width: 1050px) {
+    
 }

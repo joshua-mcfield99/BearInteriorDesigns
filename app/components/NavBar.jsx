@@ -23,7 +23,7 @@ export default function NavBar() {
             <Link href='/contact'>Contact</Link>
         </div>
         <div className={styles.nav_whatsapp}>
-
+            <Link href='/whatsapp' className={`${styles.whatsapp_link}`}>WhatsApp</Link>
         </div>
     </nav>
   )

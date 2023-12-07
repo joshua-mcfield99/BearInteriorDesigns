@@ -16,7 +16,8 @@ body {
     box-sizing: border-box;
     font-family: montserrat, sans-serif;
     font-weight: 300;
-    font-style: normal; 
+    font-style: normal;
+    font-size: 18px;
     background: #FFF;
 }
 
