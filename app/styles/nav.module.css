@@ -1,5 +1,11 @@
-/*Nav bar styling*/
 
+
+/*Hide mobile nav*/
+.nav_controls {
+    display: none;
+}
+
+/*Nav bar styling*/
 .nav_container {
     width: 100vw;
     height: 10vh;
@@ -10,6 +16,7 @@
     box-shadow: -10px -20px 50px;
     position: fixed;
     background: #fff;
+
 }
 
 .nav_logo {
@@ -19,6 +26,14 @@
 .nav_logo img {
     height: 80px;
     width: auto;
+}
+
+.nav_links_container {
+    width: 50%;
+    max-width: 560px;
+    min-width: 550px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .nav_whatsapp {
@@ -76,6 +91,123 @@
     background-color: #393d9b;
 }
 
+/*Mobile Nav styling*/
+
 @media only screen and (max-width: 1050px) {
+
+    .nav_container {
+        display: inline-block;
+        position: relative;
+    }
+
+    .nav_logo {
+        position: relative;
+        width: 80vw;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        z-index: 100;
+        background: #fff;
+    }
+
+    .nav_links_container {
+        width: 80%;
+        height: fit-content;
+        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        top: -400%;
+        background: #fff;
+        transition: 500ms;
+    }
+
+    .nav_links {
+        display: flex;
+        width: 80%;
+        z-index: 99;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav_links a:not(:last-child)::after {
+        content: '';
+        margin: 0 5px;
+    }
+
+    .nav_links a {
+        width: 100%;
+        padding: 25px 0;
+        text-align: center;
+    }
+
+    .nav_whatsapp {
+        width: 100%;
+    }
     
+    .nav_controls {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        z-index: 100;
+        top: 25%;
+        right: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        user-select: none;
+    }
+    
+    .nav_controls span,
+    .nav_controls span::before,
+    .nav_controls span::after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: #000;
+        margin: 6px 0; /* Adjusted margin for even spacing */
+        transition: 500ms;
+        user-select: none;
+    }
+    
+    .nav_controls span::before {
+        margin-top: -7px; /* Adjusted margin for spacing */
+    }
+    
+    .nav_controls span::after {
+        margin-top: 12px; /* Adjusted margin for spacing */
+    }
+
+    .menu_open span::before {
+        transition: 150ms;
+        opacity: 0;
+    }
+    
+    .menu_open span::after {
+        transition: 500ms;
+        transform: translateY(-2px) rotate(90deg);
+        margin: 0;
+    }
+
+    .menu_open span {
+        transition: 500ms;
+        transform: rotate(45deg) translateY(-2px);
+    }
+
+    .show_menu.nav_links_container {
+        transition: 500ms;
+        top: 100px;
+    }
+
+}
+
+@media only screen and (max-width: 500px){
+    .nav_links_container {
+        width: 100vw;
+    }
 }

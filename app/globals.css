@@ -19,6 +19,7 @@ body {
     font-style: normal;
     font-size: 18px;
     background: #FFF;
+    overflow: hidden;
 }
 
 h1, h2, h3 {

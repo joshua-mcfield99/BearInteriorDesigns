@@ -54,6 +54,13 @@
 
 /*BreakPoints*/
 
+/*Stop nav hero spacing*/
+@media only screen and (max-width: 1050px) {
+    .inner {
+        margin: 0;
+    }
+}
+
 /*Prevent height diff*/
 @media only screen and (max-width: 1025px) {
     .hero, .inner {
@@ -61,6 +68,8 @@
     }
 
 }
+
+
 
 
 @media only screen and (max-width: 999px) {
@@ -86,7 +95,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        margin-top: 10vh;
     }
 
     .left {
