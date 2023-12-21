@@ -41,7 +41,7 @@ export default function Home() {
                     <div>
                         <Image 
                             alt='A bed side table'
-                            src='/CROWN Shenaya PaleGrey 4.jpg'
+                            src='/CROWNShenayaPaleGrey4.jpg'
                             width={500}
                             height={300}
                         />
