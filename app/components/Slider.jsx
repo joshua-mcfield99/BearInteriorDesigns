@@ -5,26 +5,28 @@ import Image from 'next/image'
 export default function Slider(props) {
     return (
         <div className={`${styles.slider}`}>
-            {props.cards.map((card) => (
-                <div key={card.title}>
-                    <div>
-                        <h3>{card.title}</h3>
-                    </div>
-                    <div>
-                        <div>
-                            <p>{card.text}</p>
+            <div className={`${styles.slide_track}`}>
+                {props.cards.map((card) => (
+                    <div key={card.title} className={`${styles.card}`}>
+                        <div className={`${styles.card_title}`}>
+                            <h3>{card.title}</h3>
                         </div>
-                        <div>
-                            <Image 
-                                alt={card.image.alt} 
-                                src={card.image.src} 
-                                width={400}
-                                height={200}
-                            />
+                        <div className={`${styles.card_content}`}>
+                            <div className={`${styles.card_left}`}>
+                                <p>{card.text}</p>
+                            </div>
+                            <div className={`${styles.card_right}`}>
+                                <Image 
+                                    alt={card.image.alt} 
+                                    src={card.image.src} 
+                                    fill={true}
+                                    objectFit='cover'
+                                />
+                            </div>
                         </div>
                     </div>
-                </div>
-            ))}
+                ))}
+            </div>
         </div>
   )
 }
