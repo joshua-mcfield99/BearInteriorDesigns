@@ -1,61 +1,135 @@
-
-
-/*Hide mobile nav*/
-.nav_controls {
-    display: none;
-}
-
 /*Nav bar styling*/
 .nav_container {
+    display: inline-block;
+    position: fixed;
     width: 100vw;
     height: 10vh;
     max-height: 100px;
     min-height: 90px;
-    display: flex;
-    align-items: center;
     box-shadow: -10px -20px 50px;
-    position: fixed;
     background: #fff;
-
 }
 
 .nav_logo {
-    margin: 0 auto 0 25px;
+    position: relative;
+    width: 80vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    background: #fff;
 }
 
-.nav_logo img {
-    height: 80px;
-    width: auto;
+
+.nav_controls {
+    position: absolute;
+    width: 20vw;
+    height: 100%;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    background-color: #fff;
 }
 
 .nav_links_container {
-    width: 50%;
-    max-width: 560px;
-    min-width: 550px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.nav_whatsapp {
-    margin: 0 25px 0 auto;
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: -400%;
+    background: #fff;
+    transition: 500ms;
+    padding: 50px 0;
+    z-index: 95;
 }
 
 .nav_links {
     display: flex;
-    justify-content: space-evenly;
+    width: 100%;
+    z-index: 98;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.nav_links a {
-    margin: 0 5px 0 0;
-    font-size: 1.13rem;
+.nav_controls span,
+.nav_controls span::before,
+.nav_controls span::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #000;
+    margin: 6px 0; 
+    transition: 500ms;
+    user-select: none;
+}
+
+.nav_controls span::before {
+    margin-top: -7px; 
+}
+
+.nav_controls span::after {
+    margin-top: 12px; 
+}
+
+.menu_open span::before {
+    transition: 150ms;
+    opacity: 0;
+}
+
+.menu_open span::after {
+    transition: 500ms;
+    transform: translateY(-2px) rotate(90deg);
+    margin: 0;
+}
+
+.menu_open span {
+    transition: 500ms;
+    transform: rotate(45deg) translateY(-2px);
+}
+
+.show_menu.nav_links_container {
+    transition: 500ms;
+    top: 10vh;
 }
 
 .nav_links a:not(:last-child)::after {
-    content: '/';
+    content: '';
     margin: 0 5px;
 }
 
+.nav_links a {
+    width: 100%;
+    padding: 25px 0;
+    text-align: center;
+}
+
+.nav_whatsapp {
+    width: 80%;
+    height: 50px;
+    margin: 0 auto 10px;
+    background: #2E3192;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nav_whatsapp a {
+    color: #fff;
+}
+
+
+/* Desktop hover */
 .nav_links a:hover {
     color: #2E3192;
 }
@@ -68,146 +142,87 @@
     color: #C9D4E3;
 }
 
-.nav_whatsapp {
-    width: fit-content;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.whatsapp_link {
-    width: 200px;
-    height: 50px;
-    background: #2E3192;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
 .whatsapp_link:hover {
     background-color: #393d9b;
+    cursor: pointer;
 }
 
-/*Mobile Nav styling*/
+/*Break points*/
 
-@media only screen and (max-width: 1050px) {
-
-    .nav_container {
-        display: inline-block;
-        position: relative;
+@media only screen and (min-width: 600px){
+    .nav_logo {
+        width: 85vw;
     }
 
-    .nav_logo {
-        position: relative;
-        width: 80vw;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        z-index: 100;
-        background: #fff;
+    .nav_controls {
+        width: 15vw;
     }
 
     .nav_links_container {
         width: 80%;
-        height: fit-content;
-        
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        right: 0;
-        top: -400%;
-        background: #fff;
-        transition: 500ms;
-    }
-
-    .nav_links {
-        display: flex;
-        width: 80%;
-        z-index: 99;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .nav_links a:not(:last-child)::after {
-        content: '';
-        margin: 0 5px;
-    }
-
-    .nav_links a {
-        width: 100%;
-        padding: 25px 0;
-        text-align: center;
-    }
-
-    .nav_whatsapp {
-        width: 100%;
     }
     
-    .nav_controls {
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        z-index: 100;
-        top: 25%;
-        right: 25px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        user-select: none;
-    }
-    
-    .nav_controls span,
-    .nav_controls span::before,
-    .nav_controls span::after {
-        content: '';
-        display: block;
-        width: 30px;
-        height: 3px;
-        background: #000;
-        margin: 6px 0; /* Adjusted margin for even spacing */
-        transition: 500ms;
-        user-select: none;
-    }
-    
-    .nav_controls span::before {
-        margin-top: -7px; /* Adjusted margin for spacing */
-    }
-    
-    .nav_controls span::after {
-        margin-top: 12px; /* Adjusted margin for spacing */
-    }
+}
 
-    .menu_open span::before {
-        transition: 150ms;
-        opacity: 0;
-    }
-    
-    .menu_open span::after {
-        transition: 500ms;
-        transform: translateY(-2px) rotate(90deg);
-        margin: 0;
-    }
-
-    .menu_open span {
-        transition: 500ms;
-        transform: rotate(45deg) translateY(-2px);
-    }
-
+@media only screen and (min-height: 1000px) {
     .show_menu.nav_links_container {
         transition: 500ms;
         top: 100px;
     }
-
 }
 
-@media only screen and (max-width: 500px){
-    .nav_links_container {
-        width: 100vw;
+/*Change to desktop nav*/
+@media only screen and (min-width: 1025px) {
+    .nav_controls {
+        display: none;
     }
+
+    .nav_container {
+        display: flex;
+        max-width: 1990px;
+    }
+
+    .nav_logo {
+        width: 30vw;
+        margin-left: 25px;
+    }
+
+    .nav_links_container {
+        width: 50vw;
+        height: 100%;
+        max-width: 560px;
+        min-width: 550px;
+        padding: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        position: relative;
+        top: 0;
+        z-index: 100;
+        margin: 0 25px 0 auto;
+    }
+
+    .nav_whatsapp {
+        width: 50%;
+        margin: 0 0 0 25px;
+    }
+    
+    .nav_links {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+
+    }
+
+    .nav_links a:not(:last-child)::after {
+        content: '/';
+        margin: 0 5px;
+    }
+
+    .show_menu.nav_links_container {
+        transition: 500ms;
+        top: 0;
+    }
+
 }

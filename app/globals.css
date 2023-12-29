@@ -21,6 +21,8 @@ body {
     background: #FFF;
     height: fit-content;
     width: 100vw;
+    display: flex;
+    justify-content: center;
     
 }
 
@@ -29,7 +31,13 @@ nav {
 }
 
 main {
+    width: 100vw;
+    max-width: 1990px;
+    height: fit-content;
     z-index: 90;
+    position: relative;
+    top: 90px;
+    margin: 0 auto;
 }
 
 h1, h2, h3 {
@@ -46,12 +54,6 @@ p {
     font-size: 1rem;
     letter-spacing: 0.05rem;
     line-height: 2rem;
-}
-
-.main {
-    width: 100vw;
-    max-width: 1990px;
-    height: fit-content;
 }
 
 .title {
