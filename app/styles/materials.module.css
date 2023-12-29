@@ -12,7 +12,7 @@
 }
 
 .content {
-    width: 80%;
+    width: 80vw;
     height: fit-content;
     min-height: 600px;
     display: flex;
@@ -22,7 +22,6 @@
 }
 
 .slide_container {
-    width: 80%;
-    height: 400px;
-    margin-bottom: 50px;
+    width: 80vw;
+    height: 500px;
 }
