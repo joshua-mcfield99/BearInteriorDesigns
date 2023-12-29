@@ -75,11 +75,9 @@ p {
 
 @media only screen and (max-width: 1050px){
     .title {
-        margin: 0 0 50px 0;
+        margin: 50px 0 50px 0;
     }
 }
 
-@media only screen and (max-width: 1000px){
-   
-}
+
 

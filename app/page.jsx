@@ -23,7 +23,7 @@ export default function Home() {
                     <h2>About</h2>
                 </div>
                 <div className={`${styles.content}`}>
-                    <div>
+                    <div className={`${styles.about_text}`}>
                         <p>Experience a Tailored Approach to Your Ideal Living Spaces.</p>
                         <p>
                             Discover our exclusive service, where we specialize in crafting personalized, top-tier fitted furniture for your bedroom, home office, and lounge.
@@ -38,7 +38,7 @@ export default function Home() {
                             Elevate your living spaces with our custom-tailored solutions today.
                         </p>
                     </div>
-                    <div>
+                    <div className={`${styles.about_img}`}>
                         <Image 
                             alt='A bed side table'
                             src='/CROWNShenayaPaleGrey4.jpg'
