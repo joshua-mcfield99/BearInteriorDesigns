@@ -37,7 +37,6 @@ export default function Slider({data}) {
                                     alt={item.image.alt}
                                     src={item.image.src}
                                     fill
-                                    objectFit='contain'
                                 />
                             </div>
                         </div>
