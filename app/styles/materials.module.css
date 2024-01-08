@@ -2,9 +2,8 @@
 
 .materials {
     position: relative;
-    top: 10vh;
     width: 100vw;
-    height: 100vh;
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,7 +11,7 @@
 }
 
 .content {
-    width: 80vw;
+    width: 100vw;
     height: fit-content;
     min-height: 600px;
     display: flex;
@@ -22,6 +21,6 @@
 }
 
 .slide_container {
-    width: 80vw;
+    width: 100vw;
     height: 500px;
 }

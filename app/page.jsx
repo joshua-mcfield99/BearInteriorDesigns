@@ -42,9 +42,7 @@ export default function Home() {
                         <Image 
                             alt='A bed side table'
                             src='/CROWNShenayaPaleGrey4.jpg'
-                            layout='responsive'
-                            width={500}
-                            height={300}
+                            fill
                         />
                     </div>
                 </div>
