@@ -2,15 +2,21 @@
     position: relative;
     width: 100%;
     height: fit-content;
+    display: flex;
+    flex-direction: column;
+    max-width: 1990px;
 }
 
 .footer_container h3 {
     font-family: montserrat, sans-serif;
+    font-size: 1rem;
+    margin-bottom: 10px;
 }
 
 .footer_banner {
     height: 150px;
     width: 100vw;
+    max-width: 1990px;
     background-color: #2E3192;
 }
 
@@ -23,4 +29,60 @@
 
 .banner_img img {
     object-fit: contain;
+}
+
+.footer_content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+}
+
+.footer_nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.footer_links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_links a {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.footer_links a:hover {
+    color: #2E3192;
+}
+
+.footer_other {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.c_top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright p{
+    font-size: 0.8rem;
+    width: fit-content;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.footer_other a {
+    font-size: 1rem;
+    margin-top: 20px;
+    text-align: center;
 }

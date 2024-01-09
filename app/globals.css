@@ -20,9 +20,11 @@ body {
     font-size: 18px;
     background: #FFF;
     width: 100vw;
+    max-width: 1990px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0 auto;
     
 }
 
