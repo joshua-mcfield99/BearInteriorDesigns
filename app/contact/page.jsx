@@ -17,7 +17,7 @@ export default function Contact() {
                     <h3>Phone: +44 7955 577947</h3>
                 </div>
                 <div className={styles.nav_whatsapp}>
-                    <a href='/whatsapp' target="_blank" rel="noopener noreferrer" className={`${styles.whatsapp_link}`}>WhatsApp</a>
+                    <a href='https://wa.me/447955577947' target="_blank" rel="noopener noreferrer" className={`${styles.whatsapp_link}`}>WhatsApp</a>
                 </div>
             </div>
         </div>
