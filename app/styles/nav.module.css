@@ -115,20 +115,23 @@
 }
 
 .nav_whatsapp {
-    width: 80%;
-    height: 50px;
     margin: 0 auto 10px;
     background: #2E3192;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    cursor: pointer;
 }
 
 .nav_whatsapp a {
+    padding: 20px 50px;
     color: #fff;
 }
 
+.nav_whatsapp:hover {
+    background: #3f43ad;
+}
 
 /* Desktop hover */
 .nav_links a:hover {

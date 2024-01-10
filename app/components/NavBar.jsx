@@ -41,7 +41,7 @@ export default function NavBar() {
                     <Link href='/contact' onClick={toggleMenu}>Contact</Link>
                 </div>
                 <div className={styles.nav_whatsapp}>
-                    <Link href='/whatsapp' className={`${styles.whatsapp_link}`} onClick={toggleMenu}>WhatsApp</Link>
+                    <a href='/whatsapp' target="_blank" rel="noopener noreferrer" className={`${styles.whatsapp_link}`} onClick={toggleMenu}>WhatsApp</a>
                 </div>
             </div>
         </nav>

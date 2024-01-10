@@ -5,17 +5,60 @@
     flex-direction: column;
 }
 
+.container p {
+    text-align: center;
+    line-height: 2rem;
+}
+
 .nav_whatsapp {
-    width: 80%;
-    height: 50px;
     margin: 0 auto 10px;
     background: #2E3192;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    cursor: pointer;
+    max-width: 400px;
 }
 
 .nav_whatsapp a {
+    padding: 20px 100px;
     color: #fff;
+}
+
+.nav_whatsapp:hover {
+    background: #3f43ad;
+}
+
+.details_container {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 400px;
+}
+
+.details_card {
+    width: 100%;
+}
+
+.details_card h3 {
+    font-family: montserrat, sans-serif;
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+
+@media only screen and (min-width: 1049px) {
+
+    .container {
+        min-height: 75vh;
+    }
+
+    .details_container {
+        max-width: 1080px;
+        flex-direction: row;
+        margin: auto;
+    }
 }
