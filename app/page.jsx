@@ -1,7 +1,10 @@
-'use client'
-
 import Image from 'next/image'
 import styles from './page.module.css'
+
+export const metadata = {
+    title: 'Home',
+    description: 'Elevate your living space with Bear Interior Designs. Discover how we craft bespoke storage solutions for bedrooms and home offices in Godalming, Surrey. Learn more about our process and mission on our homepage.',
+}
 
 export default function Home() {
     return (

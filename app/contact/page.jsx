@@ -1,7 +1,12 @@
-'use client'
+
 import React from 'react'
 import Link from 'next/link'
 import styles from '../styles/contact.module.css'
+
+export const metadata = {
+    title: 'Contact',
+    description: 'Here you will find our contact details',
+}
 
 export default function Contact() {
   return (

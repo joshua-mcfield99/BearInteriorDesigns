@@ -1,9 +1,12 @@
-'use client'
-
 import React from 'react'
 import styles from '../styles/materials.module.css'
 import Slider from '../components/Slider'
 import slides from '../data/materials.json'
+
+export const metadata = {
+    title: 'Materials',
+    description: 'Explore premium materials at Bear Interior Designs, featuring our main supplier Crown Imperial. Discover the finest selections for your bespoke storage solutions in Godalming, Surrey. Elevate your home with quality craftsmanship and superior materials.',
+}
 
 export default function Materials() {
 

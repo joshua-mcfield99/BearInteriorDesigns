@@ -42,7 +42,8 @@ export default function Footer() {
                     </div>
                     <p>Some images were provided by Crown Imperial</p>
                 </div>
-                <Link href='/login'>Admin</Link>
+                {//<Link href='/login'>Admin</Link>
+                }
             </div>
         </div>
     </footer>

@@ -1,7 +1,10 @@
-'use client'
-
 import React from 'react'
 import styles from '../styles/gallery.module.css'
+
+export const metadata = {
+    title: 'Gallery',
+    description: 'This is our gallery you will find some images of our completed work.',
+}
 
 export default function Gallery() {
   return (
