@@ -46,6 +46,7 @@ export default function Home() {
                         <CldImage 
                             src='Other/BedsideTable'
                             fill
+                            alt='A beautiful bedside table'
                         />      
                     </div>
                 </div>
