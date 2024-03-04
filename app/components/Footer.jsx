@@ -2,15 +2,16 @@ import Image from 'next/image'
 import React from 'react'
 import styles from '../styles/footer.module.css'
 import Link from 'next/link'
+import CldImage from './CldImage'
 
 export default function Footer() {
   return (
     <footer className={`${styles.footer_container}`}>
         <div className={`${styles.footer_banner}`}>
             <div className={`${styles.banner_img}`}>
-                <Image 
+                <CldImage 
                     alt='Bear interior designs'
-                    src='/BearLogoChapman.png'
+                    src='Other/LogoWBG'
                     fill
                 />
             </div>
@@ -33,9 +34,9 @@ export default function Footer() {
                 <div className={`${styles.copyright}`}>
                     <div className={`${styles.c_top}`}>
                         <p>Copyright Bear interior designs</p>
-                        <Image 
+                        <CldImage 
                             alt='Copyright'
-                            src='/copyright.svg'
+                            src='Other/Copyright'
                             width={20}
                             height={20}
                         />

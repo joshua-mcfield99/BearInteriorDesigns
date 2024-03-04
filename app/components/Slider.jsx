@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import styles from './slider.module.css'
 import Image from 'next/image'
+import CldImage from './CldImage'
 
 export default function Slider({data}) {
 
@@ -18,10 +19,10 @@ export default function Slider({data}) {
     return (
         <div className={`${styles.slider}`}>
             <div className={`${styles.arrow} ${styles.prev}`} onClick={prevSlide}>
-                <Image 
+                <CldImage 
                     alt='Previous'
-                    src='/arrow-previous.svg'
-                    width={25}
+                    src='Other/Arrow'
+                    width={15}
                     height={25}
                 />
             </div>
@@ -34,7 +35,7 @@ export default function Slider({data}) {
                         <div className={`${styles.slide_content}`}>
                             <p>{item.text}</p>
                             <div className={`${styles.slide_img}`}>
-                                <Image
+                                <CldImage
                                     alt={item.image.alt}
                                     src={item.image.src}
                                     fill
@@ -45,10 +46,10 @@ export default function Slider({data}) {
                 )
             })}
             <div className={`${styles.arrow} ${styles.next}`} onClick={nextSlide}>
-                <Image 
+                <CldImage 
                     alt='Next'
-                    src='/arrow-forward.svg'
-                    width={25}
+                    src='Other/Arrow'
+                    width={15}
                     height={25}
                 />
             </div>

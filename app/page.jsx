@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import CldImage from './components/CldImage'
 
 export const metadata = {
     title: 'Home',
@@ -42,11 +43,10 @@ export default function Home() {
                         </p>
                     </div>
                     <div className={`${styles.about_img}`}>
-                        <Image 
-                            alt='A bed side table'
-                            src='/CROWNShenayaPaleGrey4.jpg'
+                        <CldImage 
+                            src='Other/BedsideTable'
                             fill
-                        />
+                        />      
                     </div>
                 </div>
             </div>

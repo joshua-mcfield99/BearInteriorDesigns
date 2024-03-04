@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 
 //Style
 import styles from '../styles/nav.module.css'
+import CldImage from './CldImage'
 
 export default function NavBar() {
     // State to track the menu's open/closed state
@@ -18,9 +19,9 @@ export default function NavBar() {
     return (
         <nav className={styles.nav_container}>
             <div className={styles.nav_logo}>
-                <Image 
+                <CldImage
                     alt='Bear interior designs logo'
-                    src='/BearLogoNav.png'
+                    src='Other/LogoNav'
                     width={149.6}
                     height={80}
                 />
