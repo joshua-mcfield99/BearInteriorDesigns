@@ -1,12 +1,12 @@
 'use client'
 import React from 'react'
-import { CldImage as CldImageDefault, CldImageProps }  from 'next-cloudinary';
+import { CldImage }  from 'next-cloudinary';
  
 
-const CldImage = (props=CldImageProps ) => {
+const CldImages = (props) => {
   return (
-    <CldImageDefault {...props} />
+    <CldImage {...props}/>
   )
 }
 
-export default CldImage
+export default CldImages

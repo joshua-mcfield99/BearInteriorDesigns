@@ -7,7 +7,8 @@ export const metadata = {
     description: 'Elevate your living space with Bear Interior Designs. Discover how we craft bespoke storage solutions for bedrooms and home offices in Godalming, Surrey. Learn more about our process and mission on our homepage.',
 }
 
-export default function Home() {
+
+export default async function Home() {
     return (
         <main className={`${styles.main} main`}>
             <div className={styles.hero}>
@@ -54,3 +55,5 @@ export default function Home() {
         </main>
     )
 }
+
+
