@@ -16,11 +16,12 @@ export default async function Gallery() {
         const data = await getData();
         if (data && data.images) {
             images = data.images;
+            console.log('Images from getData:', images);
         }
     } catch (error) {
         console.error('Error fetching data:', error);
     }
-
+    console.log('Images before rendering:', images);
   return (
     <main>
         <div className={`${styles.g_container}`}>
