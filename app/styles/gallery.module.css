@@ -8,7 +8,48 @@
     text-align: center;
 }
 
+.gallery {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
 .image {
-    width: 200px;
-    height: 300px;
+    position: relative;
+    width: 20%;
+    height: 250px;
+    object-fit: contain;
+    margin: 20px 20px;
+}
+
+.image img {
+    object-fit: contain;
+}
+
+@media only screen and (min-width: 320px) {
+    .image {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .image {
+        width: 45%;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .image {
+        width: 25%;
+    }
+}
+
+@media only screen and (min-width: 1650px) {
+    .image {
+        width: 20%;
+    }
 }
