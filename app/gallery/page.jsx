@@ -8,9 +8,19 @@ export const metadata = {
 }
 
 export default async function Gallery() {
-    const data = await getData();
-    const images = data.images;
-    console.log('Images', data.images);
+    //const data = await getData();
+    //const images = data.images;
+    //console.log('Images', data.images);
+    let images = [];
+    try {
+        const data = await getData();
+        if (data && data.images) {
+            images = data.images;
+        }
+    } catch (error) {
+        console.error('Error fetching data:', error);
+    }
+
   return (
     <main>
         <div className={`${styles.g_container}`}>
@@ -56,7 +66,7 @@ export async function getData() {
         }
     });
 
-    console.log(images)
+    //console.log(images)
 
     return {
         images
