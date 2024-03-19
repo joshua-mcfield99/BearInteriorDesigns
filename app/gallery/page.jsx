@@ -21,7 +21,8 @@ export default async function Gallery() {
                             src={image.url}
                             width='200'
                             height='300'
-                            crop='fill' // this breaks the fetch 
+                            strictTransformations
+                            transformations={["fit-transformation"]}
                         />
                     </div>
                 )
