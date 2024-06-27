@@ -24,6 +24,9 @@ const GalleryImages = ({ images }) => {
             <div className="title">
                 {images.length === 0 ? <h1>No Images Available</h1> : <h1>Gallery</h1>}
             </div>
+            <div className={`sub_text`}>
+                    <p>Click/Tap on an image to enlarge!</p>
+            </div>
             <div className={styles.gallery}>
                 {images.map((image, idx) => (
                     <div key={idx} className={styles.image} onClick={() => openModal(image)}>
