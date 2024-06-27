@@ -41,9 +41,9 @@ main {
 }
 
 h1, h2, h3 {
-    font-family: chapman, sans-serif;
-    font-weight: 700;
-    font-style: italic;
+    font-family: "Castoro Titling", serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 h2 {
