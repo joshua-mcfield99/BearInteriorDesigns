@@ -14,11 +14,13 @@ export default async function Home() {
             <div className={styles.hero}>
                 <div className={styles.inner}>
                     <div className={styles.left}>
-                        <h1>Crafting Your Dream Living Spaces, One Detail At A Time</h1>
+                        <h1>Transform Your Home with Our Bespoke Wardrobes.</h1>
+                        {/* Crafting Your Dream Living Spaces, One Detail At A Time */}
+                        <p>Bedrooms | Studies | Dressing Rooms | And Much More...</p>
                     </div>
                     <div className={styles.right}>
                         <p>
-                            Bespoke Bedroom Storage Soloutions in surrey and surrounding areas.
+                            Bespoke Storage Soloutions in surrey and surrounding areas.
                         </p>
                     </div>
                 </div>

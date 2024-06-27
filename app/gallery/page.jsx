@@ -1,16 +1,12 @@
-import React from 'react'
-import styles from '../styles/gallery.module.css'
-import CldImage from '../components/CldImage';
+import React from 'react';
+import GalleryImages from '../components/GalleryImages';
 
 export const metadata = {
     title: 'Gallery',
     description: 'This is our gallery you will find some images of our completed work.',
 }
 
-export default async function Gallery() {
-    //const data = await getData();
-    //const images = data.images;
-    //console.log('Images', data.images);
+export default async function GalleryPage() {
     let images = [];
     try {
         const data = await getData();
@@ -22,37 +18,20 @@ export default async function Gallery() {
         console.error('Error fetching data:', error);
     }
     console.log('Images before rendering:', images);
-  return (
-    <main>
-        <div className={`${styles.g_container}`}>
-            <div className={`title`}>
-                {images === undefined || images.length === 0 ? <h1>No Images Available</h1> : <h1>Gallery</h1>}
-            </div>
-            <div className={`${styles.gallery}`}>
-                {images.map((image, idx) => {
-                    return (
-                        <div key={idx} className={styles.image}>
-                            <CldImage
-                                src={image.url}
-                                fill
-                                sizes="(max-width: 1440px) 100vw"
-                            />
-                        </div>
-                    )
-                })}
-            </div>
-        </div>
-    </main>
-  )
+
+    return (
+        <main>
+            <GalleryImages images={images} />
+        </main>
+    );
 }
 
 export async function getData() {
     const res = await fetch(`https://api.cloudinary.com/v1_1/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/resources/image/upload?prefix=Gallery`, {
         headers: {
-            Authorization:`Basic ${Buffer.from(process.env.API_KEY + ':' + process.env.API_SECRET).toString('base64')}`
+            Authorization: `Basic ${Buffer.from(process.env.API_KEY + ':' + process.env.API_SECRET).toString('base64')}`
         }
     }).then(r => r.json());
-    //console.log('Results:', res);
 
     const { resources } = res;
 
@@ -67,10 +46,7 @@ export async function getData() {
         }
     });
 
-    //console.log(images)
-
     return {
         images
     }
 }
-

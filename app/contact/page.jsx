@@ -19,10 +19,15 @@ export default function Contact() {
             <div className={`${styles.details_container}`}>
                 <div className={`${styles.details_card}`}>
                     <h3>Email: bearinteriordesigns@gmail.com</h3>
-                    <h3>Phone: +44 7955 577947</h3>
+                    <h3>Phone: 07955 577947</h3>
                 </div>
-                <div className={styles.nav_whatsapp}>
-                    <a href='https://wa.me/447955577947' target="_blank" rel="noopener noreferrer" className={`${styles.whatsapp_link}`}>WhatsApp</a>
+                <div className={styles.contact_link}>
+                    <div className={styles.nav_whatsapp}>
+                        <a href='https://wa.me/447955577947' target="_blank" rel="noopener noreferrer" className={`${styles.whatsapp_link}`}>WhatsApp</a>
+                    </div>
+                    <div className={styles.nav_whatsapp}>
+                        <a href='https://www.instagram.com/bearinteriordesigns?igsh=MW1zdmhsanBwc3E5OQ' target="_blank" rel="noopener noreferrer" className={`${styles.whatsapp_link}`}>Instagram</a>
+                    </div>
                 </div>
             </div>
         </div>
