@@ -212,7 +212,7 @@
         justify-content: space-evenly;
         flex-direction: row;
         position: relative;
-        top: 0px;
+        top: -100px;
         z-index: 100;
         margin: 0 25px 0 auto;
     }
