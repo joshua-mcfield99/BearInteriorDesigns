@@ -199,7 +199,7 @@
     }
 
     .show_menu.nav_links_container {
-        top: 0;
+        top: -100px;
     }
 
     .nav_links_container {
