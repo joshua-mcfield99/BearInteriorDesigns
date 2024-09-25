@@ -21,6 +21,10 @@
     background: #fcfcfc;
 }
 
+.nav_inner_container {
+    max-width: 1990px;
+}
+
 
 .nav_controls {
     position: absolute;
