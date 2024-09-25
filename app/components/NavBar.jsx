@@ -22,8 +22,8 @@ export default function NavBar() {
                 <CldImage
                     alt='Bear interior designs logo'
                     src='Other/LogoNav'
-                    width={124}
-                    height={93}
+                    width={154}
+                    height={116}
                 />
             </div>
             <div className={`
