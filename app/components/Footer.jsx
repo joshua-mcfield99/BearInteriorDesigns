@@ -27,7 +27,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className={`${styles.footer_contact}`}>
-                <h3>Phone: +44 7955 577947</h3>
+                <h3>Phone: +44 7498 862 196</h3>
                 <h3>Email: bearinteriordesigns@gmail.com</h3>
                 <span id="siteseal"><script async type="text/javascript" src="https://seal.starfieldtech.com/getSeal?sealID=EftWBs4kKiqtpuMRhRvCcm4UIoDnIfPuYrG5JgWlomNoPAklBmroq7Z3rVCm"></script></span>
             </div>
