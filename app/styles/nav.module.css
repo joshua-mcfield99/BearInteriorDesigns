@@ -190,7 +190,6 @@
 
     .nav_container {
         display: flex;
-        max-width: 1990px;
     }
 
     .nav_logo {
