@@ -234,10 +234,4 @@
         content: '/';
         margin: 0 5px;
     }
-
-    .show_menu.nav_links_container {
-        transition: 500ms;
-        top: 0;
-    }
-
 }
