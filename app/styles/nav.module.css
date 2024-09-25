@@ -198,6 +198,10 @@
         margin-left: 25px;
     }
 
+    .show_menu.nav_links_container {
+        top: 0;
+    }
+
     .nav_links_container {
         width: 50vw;
         height: 100%;
@@ -208,7 +212,7 @@
         justify-content: space-evenly;
         flex-direction: row;
         position: relative;
-        top: -100px;
+        top: 0px;
         z-index: 100;
         margin: 0 25px 0 auto;
     }
