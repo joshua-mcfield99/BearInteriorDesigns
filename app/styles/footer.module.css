@@ -4,7 +4,6 @@
     height: fit-content;
     display: flex;
     flex-direction: column;
-    max-width: 1990px;
 }
 
 .footer_container h3 {
@@ -36,6 +35,7 @@
     display: flex;
     flex-direction: column;
     margin: 50px auto;
+    max-width: 1990px;
 }
 
 .footer_nav {
