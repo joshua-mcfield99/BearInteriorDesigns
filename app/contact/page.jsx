@@ -18,7 +18,7 @@ export default function Contact() {
             <p>You can contact us a few ways just use one of the following options to book your free no-obligation quote!</p>
             <div className={`${styles.details_container}`}>
                 <div className={`${styles.details_card}`}>
-                    <h3>Email: bearinteriordesigns@gmail.com</h3>
+                    <h3>Email: <a href='mailto:bearinteriordesigns@gmail.com' rel="nofollow noopener noreferrer external" target='_blank' >bearinteriordesigns@gmail.com</a></h3>
                     <h3>Phone: +44 7498 862 196</h3>
                 </div>
                 <div className={styles.contact_link}>

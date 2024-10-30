@@ -20,12 +20,14 @@ export default function NavBar() {
         <nav className={styles.nav_container}>
             <div className={styles.nav_inner_container}>
                 <div className={styles.nav_logo}>
-                    <CldImage
-                        alt='Bear interior designs logo'
-                        src='Other/LogoNav'
-                        width={150}//134 original
-                        height={100}
-                    />
+                    <Link href='/'>
+                        <CldImage
+                            alt='Bear interior designs logo'
+                            src='Other/LogoNav'
+                            width={150}//134 original
+                            height={100}
+                        />
+                    </Link>
                 </div>
                 <div className={`
                         ${styles.nav_controls} 

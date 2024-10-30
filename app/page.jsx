@@ -20,7 +20,7 @@ export default async function Home() {
                     </div>
                     <div className={styles.right}>
                         <p>
-                            Bespoke Storage Soloutions in surrey and surrounding areas.
+                            Bespoke Storage Soloutions in Surrey and surrounding areas.
                         </p>
                     </div>
                 </div>
@@ -33,7 +33,7 @@ export default async function Home() {
                     <div className={`${styles.about_text}`}>
                         <p>Experience a Tailored Approach to Your Ideal Living Spaces.</p>
                         <p>
-                            Discover our exclusive service, where we specialize in crafting personalized, top-tier fitted furniture for your bedroom, home office, and lounge.
+                            Discover our exclusive service, where we specialise in crafting personalised, top-tier fitted furniture for your bedroom, home office, and lounge.
                         </p>
                         <p>
                             {'Here\'s'} how it works: I start with a complimentary, no-obligation home design survey {'\-'} I will come to you. Then, we transform your ideas into a vivid reality with detailed CAD drawings of your envisioned furniture. Once {'you\'re'} thrilled with the design, I will handle material sourcing and expert installation, delivering your dream furniture.
